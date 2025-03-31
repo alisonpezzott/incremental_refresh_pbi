@@ -30,4 +30,3 @@ SELECT TOP(100)
     update_on
 FROM 
 	fact_production;
-);
