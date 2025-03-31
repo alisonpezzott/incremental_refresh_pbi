@@ -1,0 +1,11 @@
+dim_dates = 
+ADDCOLUMNS(
+    CALENDAR(
+        DATE(2021, 1, 1),
+        TODAY()
+    ),
+    "Year", YEAR([Date]),
+    "Quarter", QUARTER([Date]),
+    "Month", FORMAT([Date], "MMM", "en-US"),
+    "MonthNum", MONTH([Date])
+) 
